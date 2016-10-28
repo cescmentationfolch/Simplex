@@ -1,4 +1,6 @@
-
+problems 1,2 solucio optima
+3 infactible
+4 ilimitat
 :::::::::::::::::::::::::::::::::::::::::
 ::  PM/GM/FME Curs 2016-17 : alumne  1 ::
 :::::::::::::::::::::::::::::::::::::::::
