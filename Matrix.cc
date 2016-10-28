@@ -11,6 +11,21 @@ Matrix::Matrix(int _n, int _m, vector<vector<long double> > _M) {
     N = vector<int>(m, 1);
 }
 
+Matrix::Matrix(int _n, bool _h, vector<long double> _M) {
+  if (_h) {
+    n = 1;
+    m = _n;
+    M = vector<vector<long double> >(1, _M);
+  }
+  else {
+    n = _n;
+    m = 1;
+    M = vector<vector<long double> >(n, vector<long double>(1));
+    for (int i = 0; i < n; ++i) M[i][0] = _M[i];
+  }
+  N = vector<int>(m, 1);
+}
+
 Matrix::~Matrix(){}
 
 void Matrix::modifica_estat_columna(int f, int val) {
