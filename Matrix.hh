@@ -30,6 +30,10 @@ public:
     //pre: cert
     //post: es crea una matriu (_n,_m) amb els elements de _M
     
+    Matrix(int _n, bool _h, vector<long double> _M);
+    //pre: cert
+    //post: crea la matriu corresponent a un vector de dimensio _n, si _h es true el vector es vertical
+    
     //Destructores
     
     ~Matrix();
