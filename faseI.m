@@ -1,3 +1,5 @@
+% simplex fase 1 prova crec que no va
+
 function [VB2, z] = SimplexFaseI (A, b)
     m = length(A(:,1));
     n = length(A);
