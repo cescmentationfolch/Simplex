@@ -12,7 +12,8 @@
 - Finally, sync with Github: `git push`. The first time, you will have to choose where to push: `git push --set-upstream origin <branch>`
 
 ## Changing between branches
-- Just type `git checkout -b <branch>`.
+- If you expect to use a new branch, create it on Github.
+- Just type `git checkout -b <branch>` and update your Github source: `git pull origin <branch>` and `git push --set-upstream origin <branch>`. 
 
 ## It's not always that good
 - Probably changes will be performed by others, so you will have to merge them before pushing. Before pushing, check if there are changes by `git pull`; git will automatically try to merge your changes with others'. If there is a problem, local files will be modified and you will have to decide what to do, change the file and commit and push again.
