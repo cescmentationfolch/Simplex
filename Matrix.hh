@@ -44,6 +44,8 @@ public:
     //pre: 0 <= f < m, val = 0 o 1
     //post: l'estat de la columna f passa ser val i s'actualitza mr
     
+    //Operadors
+    
     Matrix operator!();
     //pre: el nombre de columnes actives es n i te rang maxim
     //post: retorna la matriu inversa (n,n)
@@ -51,6 +53,20 @@ public:
     Matrix operator*(const Matrix& mat);
     //pre: la matriu mat es (m,k)
     //post: retorna la matriu resultant de multiplicar la matriu per mat
+    
+    Matrix operator-(const Matrix& mat);
+    //pre: la matriu mat te la mateixa mida
+    //post: retorna la matriu resultant de restar mat
+    
+    Matrix operator+(const Matrix& mat);
+    //pre: la matriu mat te la mateixa mida
+    //post: retorna la matriu resultant de sumar mat
+    
+    //Escriptura
+    
+    void print();
+    //pre: cert
+    //post: escriu la matriu per pantalla
 };
 
 #endif
