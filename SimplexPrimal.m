@@ -1,7 +1,3 @@
-% PM. Practica 2: Implementacio del simplex primal
-% Carlos Segarra Gonzalez, Jose A. Ballester Huesca
-% Arxiu d'execucio
-
 % Lectura de les dades (A, b, c)
 c = dlmread('entrada_deg3/c.dat');
 A = dlmread('entrada_deg3/A.dat');
