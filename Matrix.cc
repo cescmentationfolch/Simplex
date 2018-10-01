@@ -1,13 +1,8 @@
 #include "Matrix.hh"
 
-Matrix::Matrix() {
-    n = m = 0;
-}
+Matrix::Matrix() : n(0), m(0) {}
 
-Matrix::Matrix(int _n, int _m, vector<vector<long double> > _M) {
-    n = _n;
-    m = _m;
-    M = _M;
+Matrix::Matrix(int _n, int _m, vector<vector<long double> > _M) : n(_n), m(_m), M(_M) {
     N = vector<int>(m, 1);
 }
 
